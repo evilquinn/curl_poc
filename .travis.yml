@@ -4,7 +4,7 @@ compiler: gcc
 dist: trusty
 
 install:
-    - sudo apt-get install -qq cmake libboost-dev
+    - sudo apt-get install cmake libboost-dev-all
 
 script:
     - mkdir build
