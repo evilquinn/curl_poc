@@ -4,10 +4,10 @@ compiler: gcc
 dist: trusty
 
 install:
-    - sudo apt-get install cmake libboost-dev-all
+    - sudo apt-get install cmake
 
 script:
     - mkdir build
     - cd build
-    - cmake ../.
+    - cmake -DBUILD_BOOST=ON ../.
     - make
