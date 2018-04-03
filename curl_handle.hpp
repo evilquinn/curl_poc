@@ -14,7 +14,7 @@ public:
     {
         return curl_.get();
     }
-    operator CURL*()
+    operator CURL* ()
     {
         return curl_.get();
     }
